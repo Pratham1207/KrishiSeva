@@ -1,0 +1,240 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tempo-Responsive Email Template</title>
+    
+</head>
+<body>
+    <table border="0" width="100%" cellspacing="0" cellpadding="0" bgcolor="#fcfcfc">
+        <tbody>
+            <tr>
+                <td>
+                    <table class="devicewidth" border="0" width="95%" cellspacing="0" cellpadding="0" align="center">
+                        <tbody>
+                            <tr>
+                                <td style="font-size: 1px; line-height: 1px;" align="center" height="30"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table border="0" width="100%" cellspacing="0" cellpadding="0" bgcolor="#fcfcfc">
+        <tbody>
+            <tr>
+                <td>
+                    <table class="devicewidth" border="0" width="95%" cellspacing="0" cellpadding="0" align="center">
+                        <tbody>
+                            <tr>
+                                <td width="100%">
+                                    <table class="devicewidth" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" style="background-color: #fe8f23;">
+                                        <tbody>
+                                            <tr>
+                                                <td align="center" width="100%">
+                                                    <table class="devicewidth" border="0" width="100%" cellspacing="0" cellpadding="0" align="left" style="background-color: #fe8f23;">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td align="center" height="70">                                                                    
+                                                                    <div>
+                                                                      <h2 style="font-family:Calibri; color:#FFFFFF"> SpeedyBro</h2>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table border="0" width="100%" cellspacing="0" cellpadding="0" bgcolor="#fcfcfc">
+        <tbody>
+            <tr>
+                <td>
+                    <table class="devicewidth" border="0" width="95%" cellspacing="0" cellpadding="0" align="center">
+                        <tbody>
+                            <tr>
+                                <td style="font-size: 1px; line-height: 1px;" align="center" height="30"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table border="0" width="100%" cellspacing="0" cellpadding="0" bgcolor="#fcfcfc">
+        
+		<tbody>
+            
+			<tr>
+                
+				<td>
+                    <table class="devicewidth" border="0" width="100%" cellspacing="0" cellpadding="0" align="center">
+                        
+						<tbody>
+                            
+							<tr>
+                                <td style="width: 100%;">
+                                    <table class="devicewidth" border="0" width="95%" cellspacing="5" cellpadding="5" align="center">
+                                        <tbody>
+                                            <tr>
+                                                <td>Hi, <strong> {{USERNAME}} </strong></td> 
+												
+                                            </tr>
+											<tr>
+											   <td> Your order has been <strong> {{STATUS}} </strong></td>
+											</tr>
+											<tr>
+                                        <td style="text-align:right">Order {{STATUS}} on : <strong> {{ORDERDATE}} </strong></td>
+										</tr>
+										<tr>
+                                        <td style="text-align:right">Order ID :<strong>ODR{{ORDERID}} </strong></td>
+										</tr>
+									   </tbody>
+									   </table>
+									   </td> 
+									</tr>
+									
+									<tr> 
+									
+										<td>
+										  <table style="width:95%" align="center">
+										  <tr>
+										   <td> <strong> Delivery Address </strong> </td>
+										   </tr>
+										    <tr>
+											 <td> <p>{{ADDRESS}} </p>
+											 	  <p>{{LOCALITY}} </p>
+											 	   <p>{{LANDMARK}} </p></td>
+											
+											</tr>
+										  </table>
+                                        
+										</td>
+										</tr>
+										                                                                                     
+                                        <tr>
+                                    <td>
+                                        <table class="devicewidth" border="1" style="border: 1px solid #808080;" width="92%" cellspacing="0" cellpadding="3" align="center">
+                                            <thead>
+                                                <tr>
+                                                    <th align="left" style="border-right: 1px solid #808080; border-top: none;">#</th>
+                                                    <th align="left" style="border-right: 1px solid #808080; border-top: none;">Product</th>
+                                                    <th align="center" style="border-right: 1px solid #808080; border-top: none;">Quantity</th>
+                                                    <th align="right" style="border-right: 1px solid #808080; border-top: none;">Price</th>                                                    
+                                                    <th align="right" style="border-right: 1px solid #808080; border-top: none;">Total</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                {{PRODUCTROWS}}
+                                            </tbody>
+                                            <tfoot>
+											    <tr>
+                                                    <td align="right" colspan="2" style="border-top: 1px solid #808080;border-right: 1px solid #808080;">Total</td>
+                                                    <td align="center" style="border-top: 1px solid #808080;border-right: 1px solid #808080;">{{TOTALQUANTITY}}</td>
+                                                    <td align="right" style="border-top: 1px solid #808080;border-right: 1px solid #808080;">&nbsp;</td>
+                                                    <td align="right" style="border-top: 1px solid #808080;border-right: 1px solid #808080;">{{TOTALPRICE}}</td>
+                                                </tr>
+                                            
+									 <tr><td colspan="4" align="right" style="border-top: 1px solid #808080;border-right: 1px solid #808080;"><strong>Delivery Charge &#8377;</strong></td><td align="right"><strong> {{DCHARGE}}</strong></td></tr>
+									 <tr><td colspan="4" align="right" style="border-top: 1px solid #808080;border-right: 1px solid #808080;"><strong>Handling Charges &#8377;</strong></td><td align="right"><strong> {{HCHARGE}} </strong></td></tr>
+									 <tr><td colspan="4" align="right" style="border-top: 1px solid #808080;border-right: 1px solid #808080;"><strong>Grand Total &#8377;</strong></td><td align="right"><strong> {{GTOTAL}}</strong></td></tr>
+								
+                                            </tfoot>
+                                        </table>
+                                    </td>
+                                </tr>
+
+										</tbody>
+                                    </table>
+                                </td>
+                            
+							</tr>
+                        
+						</tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="devicewidth" border="0" width="95%" cellspacing="0" cellpadding="0" align="center">
+        <tbody>            
+           <!-- <tr>
+                <td>
+                    <br />
+                    Your request will be shortly served by your Head of Department.</td>
+            </tr>-->
+            <tr>
+                <td style=""> <strong> <hr/> Thank you for shopping with
+                    <h3> SpeedyBro  </h3></strong></td>
+            </tr>
+        </tbody>
+    </table>
+    <table border="0" width="100%" cellspacing="0" cellpadding="0" bgcolor="#fcfcfc">
+        <tbody>
+            <tr>
+                <td>
+                    <table class="devicewidth" border="0" width="95%" cellspacing="0" cellpadding="0" align="center">
+                        <tbody>
+                            <tr>
+                                <td style="font-size: 1px; line-height: 1px;" align="center" height="30"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table border="0" width="100%" cellspacing="0" cellpadding="0" bgcolor="#fcfcfc">
+        <tbody>
+            <tr>
+                <td>
+                    <table class="devicewidth" border="0" width="95%" cellspacing="0" cellpadding="0" align="center"  style="background-color: #fe8f23;">
+                        <tbody>
+                            <tr>
+                                <td width="100%">
+                                    <table class="devicewidth" border="0" width="95%" cellspacing="0" cellpadding="0" align="center"  style="background-color: #fe8f23;">
+                                        <tbody>
+                                            <tr>
+                                                <td style="font-size: 1px; line-height: 1px; mso-line-height-rule: exactly;" height="10"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <table class="devicewidth" border="0" width="100%" cellspacing="0" cellpadding="0" align="center">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td align="center">
+                                                                    <div style="color:#fff;font-size:16px;font-family:Calibri;">
+                                                                        All Rights Reserved to SpeedyBro &trade; - 2021
+                                                                    </div>
+                                                                </td>                                                                
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-size: 1px; line-height: 1px; mso-line-height-rule: exactly;" height="10"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
